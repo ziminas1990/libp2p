@@ -42,6 +42,7 @@ include_directories(
 
 option(SSL_ENABLED "SSL support (OpenSSL is required)" ON)
 option(HTTP_ENABLED "HTTP protocol support" ON)
+include(CheckDependencies.cmake)
 
 add_subdirectory(asyncio)
 add_subdirectory(p2putils)
